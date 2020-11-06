@@ -1,0 +1,24 @@
+@import './variable';
+
+.title{
+    height: 100vh;
+    background-color: $black;
+    display: flex;
+    div{
+        margin: auto;
+        width: 70%;
+        h3{
+            font-family: 'Noto Sans JP', sans-serif;
+            color: $white;
+            font-size: 4vw;
+            strong{
+                color: $orange;
+            }
+        }
+        p{
+            margin-top: 2vh;
+            font-size: 1.2vw;
+            color: $white;
+        }
+    }
+}

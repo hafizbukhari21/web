@@ -1,0 +1,29 @@
+.title {
+  height: 100vh;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.title div {
+  margin: auto;
+  width: 70%;
+}
+
+.title div h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #ffffff;
+  font-size: 4vw;
+}
+
+.title div h3 strong {
+  color: #E18A07;
+}
+
+.title div p {
+  margin-top: 2vh;
+  font-size: 1.2vw;
+  color: #ffffff;
+}
+/*# sourceMappingURL=title.css.map */
