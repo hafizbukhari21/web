@@ -8,14 +8,23 @@ nav{
     padding-top: 1%;
     position: fixed;
     width: 100vw;
+    z-index: 10;
     .author{
         display: flex;
         font-size: 1.3vw;
-        color: $white;
+        a{
+            color: $white;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+        a:hover{
+            color: $orange;
+        }
     }
     ul{
         display: flex;
         list-style-type: none;
+       
         
         li{
             margin: auto;

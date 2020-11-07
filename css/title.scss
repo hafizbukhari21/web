@@ -5,7 +5,7 @@
 .wrapper{
     height: 100vh;
     width: 100vw;
-    overflow: scrollY;
+    overflow: hidden;
     .slider{
         height: 100vh;
         width: 300vw;
@@ -13,8 +13,7 @@
         transition: 0.5s;
         left: 0vw;
         position: relative;
-        background-color: turquoise;
-        z-index: -1;
+        z-index: 0;
         
     }
 }
@@ -43,7 +42,7 @@
         p{
             margin-top: 2vh;
             font-size: 1.2vw;
-            color: $white;
+            color: $gray;
         }
     }
     .redirect{
@@ -59,10 +58,18 @@
                 color: $orange;
                 border: 2px solid $orange;
                 padding: 5px 10px;
-                
                 position: relative;
                 transition: 0.5s;
+                
+                border-radius: 0px;
             }
+            a:hover{
+                
+                color: $white;
+                border: 2px solid $white;
+            }
+            
+          
            
         }
        
@@ -73,4 +80,11 @@
     width: 100vw;
     height: 100vh;
     background-color: $dark-gray;
+}
+
+.contactme{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
 }

@@ -15,22 +15,22 @@
 </head>
 <body>
     <nav>
-            <div class="author">M. Hafiz Bukhari</div>
+            <div class="author" ><a href="" class="home">M. Hafiz Bukhari</a></div>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/mhafizbukhari/" >
                         <i class="fas fa-user"></i>
                         <span>&nbsp;About</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="" class="menuPortofolio">
                         <i class="fas fa-tasks"></i>
                         <span>&nbsp;Portofolio</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="menuContactMe">
                         <i class="fas fa-phone-square-alt"></i>
                         <span>&nbsp;Contact Me</span>
                     </a>
@@ -52,11 +52,11 @@
                 </div>
                 <div class="redirect">
                     <div>
-                        <a href="" class="xx" >Portofolio</a>
+                        <a href="" class="menuPortofolio" >Portofolio</a>
                         
                     </div>
                     <div>
-                        <a href="">Contact me</a>
+                        <a href="" class="menuContactMe">Contact me</a>
                     </div>
                     
                 </div>
@@ -64,6 +64,11 @@
             <div class="portofolio">
 
             </div>
+
+            <div class="contactMe">
+
+            </div>
+
         </section>
     </section>
    
@@ -71,9 +76,21 @@
 </body>
 <script src="js/animTittle.js"></script>
 <script>
-    let x = document.querySelector(".xx")
-    x.addEventListener("click",function(){
-        ale
+    let x = document.querySelector(".menuPortofolio")
+    let menuContactMe = document.querySelector(".menuContactMe")
+    let home = document.querySelector(".home")
+    let slider =document.querySelector(".slider")
+    x.addEventListener("click",function(e){
+        e.preventDefault()
+        slider.style.left="-100vw"
+    })
+    home.addEventListener("click", function (e) {
+        e.preventDefault()
+        slider.style.left = "0vw"
+    })
+    menuContactMe.addEventListener("click",function (e) { 
+        e.preventDefault()
+        slider.style.left = "-200vw"
     })
 </script>
 <script defer src="js/navigation.js"></script>

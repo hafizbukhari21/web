@@ -9,6 +9,7 @@ nav {
   padding-top: 1%;
   position: fixed;
   width: 100vw;
+  z-index: 10;
 }
 
 nav .author {
@@ -16,7 +17,17 @@ nav .author {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.3vw;
+}
+
+nav .author a {
   color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .author a:hover {
+  color: #E18A07;
 }
 
 nav ul {
