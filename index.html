@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/title.css">
-
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/b96ec3f531.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    
 </head>
 <body>
     <nav>
@@ -38,16 +39,42 @@
             </ul>
     </nav>
 
-    <section class="title" >
-        <div>
-            <h3>
-                 I'm a <strong>Programmer</strong>
-            </h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, eveniet.
-            </p>
-        </div>
+    <section class="wrapper">
+        <section class="slider">
+            <div class="title">
+                <div class="intro">
+                    <h3>
+                        I'm a <strong  class="typewrite" data-period="2000" data-type='[ "Desig",  "Programmer" ]'></strong>
+                    </h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, eveniet.
+                    </p>
+                </div>
+                <div class="redirect">
+                    <div>
+                        <a href="" class="xx" >Portofolio</a>
+                        
+                    </div>
+                    <div>
+                        <a href="">Contact me</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="portofolio">
+
+            </div>
+        </section>
     </section>
+   
 
 </body>
+<script src="js/animTittle.js"></script>
+<script>
+    let x = document.querySelector(".xx")
+    x.addEventListener("click",function(){
+        ale
+    })
+</script>
+<script defer src="js/navigation.js"></script>
 </html>
