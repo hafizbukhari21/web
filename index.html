@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/portofolio.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/b96ec3f531.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -18,23 +19,24 @@
             <div class="author" ><a href="" class="home">M. Hafiz Bukhari</a></div>
             <ul>
                 <li>
-                    <a href="https://www.linkedin.com/in/mhafizbukhari/" >
+                    <a href="" class="navhome">
                         <i class="fas fa-user"></i>
                         <span>&nbsp;About</span>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="menuPortofolio">
+                    <a href="" class="navPortofolio">
                         <i class="fas fa-tasks"></i>
                         <span>&nbsp;Portofolio</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="menuContactMe">
+                    <a href="#" >
                         <i class="fas fa-phone-square-alt"></i>
                         <span>&nbsp;Contact Me</span>
                     </a>
                 </li>
+                
                 
             </ul>
     </nav>
@@ -62,11 +64,41 @@
                 </div>
             </div>
             <div class="portofolio">
-
+                <div class="portoContainer">
+                    <div class="portoSlider">
+                        <div class="card">
+                            <div class="cardTitle">
+                               <h5>Lorem ipsum dolor sit amet.</h5> 
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardTitle">
+                                <h5>Lorem ipsum dolor sit.</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardTitle">
+                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardTitle">
+                                <h5>Lorem, ipsum dolor.</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="cardTitle">
+                                <h5>Lorem ipsum dolor sit.</h5>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
             </div>
 
             <div class="contactMe">
-
+                <h1 >ContactMe</h1>
             </div>
 
         </section>
@@ -76,13 +108,16 @@
 </body>
 <script src="js/animTittle.js"></script>
 <script>
-    let x = document.querySelector(".menuPortofolio")
+    let menuPorto = document.querySelector(".menuPortofolio")
     let menuContactMe = document.querySelector(".menuContactMe")
     let home = document.querySelector(".home")
+    let navHome = document.querySelector(".navhome")
+    let navPortoFolio = document.querySelector(".navPortofolio")
     let slider =document.querySelector(".slider")
-    x.addEventListener("click",function(e){
+    menuPorto.addEventListener("click",function(e){
         e.preventDefault()
         slider.style.left="-100vw"
+
     })
     home.addEventListener("click", function (e) {
         e.preventDefault()
@@ -91,6 +126,15 @@
     menuContactMe.addEventListener("click",function (e) { 
         e.preventDefault()
         slider.style.left = "-200vw"
+    })
+    
+    navPortoFolio.addEventListener("click", function (e) { 
+        e.preventDefault()
+        menuPorto.click()
+    })
+    navhome.addEventListener("click",function name(e) {
+        e.preventDefault()
+        home.click()
     })
 </script>
 <script defer src="js/navigation.js"></script>

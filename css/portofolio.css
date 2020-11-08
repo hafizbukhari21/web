@@ -1,0 +1,53 @@
+.portofolio {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portofolio .portoContainer {
+  margin: auto;
+  width: 90vw;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.portofolio .portoContainer .portoSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portofolio .portoContainer .portoSlider .card {
+  background-color: #222;
+  width: 300px;
+  height: 500px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.portofolio .portoContainer .portoSlider .card .cardTitle {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portofolio .portoContainer .portoSlider .card .cardTitle h5 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+/*# sourceMappingURL=portofolio.css.map */

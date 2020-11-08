@@ -1,0 +1,41 @@
+@import './variable';
+
+.portofolio{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    .portoContainer{
+        margin: auto;
+        width: 90vw;
+        height:  500px ;
+        
+        display: flex;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        .portoSlider{
+            display: flex;
+            
+            width: 100%;
+            justify-content:  space-evenly;
+            flex-wrap: wrap;
+            .card{
+                background-color: $dark-gray;
+                width: 300px;
+                height: 500px;
+                margin-bottom: 50px;
+                border-radius: 5px;
+                .cardTitle{
+                    padding: 15px;
+                    display: flex;
+                    h5{
+                        justify-content: center;
+                        
+                        color: white;    
+                    }
+                }
+               
+            }
+        }
+    }
+}
