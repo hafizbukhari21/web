@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/portofolio.css">
+    <link rel="stylesheet" href="css/contactMe.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/b96ec3f531.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Website portofolio Hafiz.">
+    <meta name="keywords" content="Developer, Programmer, JavaScript, Binus,">
+    <meta name="author" content="M. Hafiz Bukhari">
     <title>Document</title>
     
 </head>
 <body>
+    <div class="closeNavbar"> 
+        <a href="#"></a>
+    </div>
     <nav>
             <div class="author" ><a href="" class="home">M. Hafiz Bukhari</a></div>
             <ul>
@@ -31,7 +39,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" >
+                    <a href="#" class="navContact">
                         <i class="fas fa-phone-square-alt"></i>
                         <span>&nbsp;Contact Me</span>
                     </a>
@@ -39,6 +47,11 @@
                 
                 
             </ul>
+
+            <a href="" class="burgerMenu" >
+                <i class="fas fa-bars"></i>
+            </a>
+            
     </nav>
 
     <section class="wrapper">
@@ -49,7 +62,7 @@
                         I'm a <strong  class="typewrite" data-period="2000" data-type='[ "Desig",  "Programmer" ]'></strong>
                     </h3>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, eveniet.
+                        Mencoba membuat sesuatu yang lebih baik
                     </p>
                 </div>
                 <div class="redirect">
@@ -68,74 +81,189 @@
                     <div class="portoSlider">
                         <div class="card">
                             <div class="cardTitle">
-                               <h5>Lorem ipsum dolor sit amet.</h5> 
+                               <div class="titleImageWrapper">
+                                   <img src="./asets/phoenix.png" alt="">
+                               </div>
+                               
+                            </div>
+                            <div class="cardDesc">
+                                 <div>
+                                    <h4>
+                                        Website E-Commerce Phoenix 
+                                    </h4>
+                                    <p>
+                                        Projek inilah yang membuat gw bisa berinteraksi dengan client. Dari projek inilah gw belajar banyak hal.                                    </p>
+                                 </div>
+                            </div>
+                            <div class="cardfooter">
+                                    <a href="http://phoenixjewellery.id/">Visit</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="cardTitle">
-                                <h5>Lorem ipsum dolor sit.</h5>
+                                <div class="titleImageWrapper">
+                                    <img src="./asets/notes.png" alt="">
+                                </div>
                             </div>
+                            <div class="cardDesc">
+                                <div>
+                                   <h4>
+                                       Offline Todo List
+                                   </h4>
+                                   <p>
+                                    Membuat notes yang dapat tersimpan secara local
+                                    </p>
+                                </div>
+                           </div>
+                           <div class="cardfooter">
+                                   <a href="https://hafizbukhari21.github.io/Notes/">Visit</a>
+                           </div>
                         </div>
                         <div class="card">
                             <div class="cardTitle">
-                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                                <div class="titleImageWrapper">
+                                    <img src="./asets/portoGame.jpg" alt="">
+                                </div>
                             </div>
+                            <div class="cardDesc">
+                                <div>
+                                   <h4>
+                                       Game - Lexikon
+                                   </h4>
+                                   <p>
+                                    Nah kalo ini projek skripsi gw pake Unity, sama teman gw insisialnya MTP. Diprojek ini gw bertugas sebagai Game Artist
+                                   </p>
+                                </div>
+                           </div>
+                           <div class="cardfooter">
+                                   <a href="https://www.youtube.com/watch?v=hJ1Ht4C0erY&t=0s">Visit</a>
+                           </div>
                         </div>
                         <div class="card">
                             <div class="cardTitle">
-                                <h5>Lorem, ipsum dolor.</h5>
+                                <div class="titleImageWrapper">
+                                    <img src="./asets/livetask.jpg" alt="">
+                                </div>
                             </div>
+                            <div class="cardDesc">
+                                <div>
+                                   <h4>
+                                       Livetask - On Progress
+                                   </h4>
+                                   <p>
+                                    Projek bareng teman. lagi dalam tahap pengerjaan. kali ini gw sebagai FE Web
+                                   </p>
+                                </div>
+                           </div>
+                           <div class="cardfooter">
+                                   <a href="https://hafizbukhari21.github.io/LiveTask/">Visit</a>
+                           </div>
                         </div>
                         <div class="card">
                             <div class="cardTitle">
-                                <h5>Lorem ipsum dolor sit.</h5>
+                                <div class="titleImageWrapper">
+                                    <img src="./asets/fpjapps.jpg" alt="">
+                                </div>
                             </div>
+                            <div class="cardDesc">
+                                <div>
+                                   <h4>
+                                       FPJ Apps - On Progress
+                                   </h4>
+                                   <p>
+                                       Lagi mencoba membuat sosmed untuk keperluan orgamisasi. 
+                                   </p>
+                                </div>
+                           </div>
+                           <div class="cardfooter">
+                                   <a href="https://filmpendekjakarta.netlify.app/"> Visit</a>
+                           </div>
                         </div>
                         
                     </div>
                     
                 </div>
+                <div class="contactMeinPorto">
+                    <div >
+                        <a href="#" class="contactMePorto">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contactMe"> 
+                <div class="contactMeWrapper">
+                    <div class="pictureMe">
+                        <img src="asets/Hafiz.jpg" alt="">
+                    </div>
+                    <div class="bio">
+                        <h4>
+                            M. Hafiz Bukhari
+                        </h4>
+                        <p>
+                            Mengembangkan website dengan teknologi yang gw bisa yaitu React Js dan Laravel. Sebenarnya gw gak jago2 kali sih yang penting modal yakin aja.
+                            Btw ini web gw buat sendiri.
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/bukharihafiz/">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/hafizbukhari21">
+                                    <i class="fab fa-github-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/mhafizbukhari/">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/m.hafiz.b/?hl=en">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.net/hafizbukhaf3a3">
+                                    <i class="fab fa-behance-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:hafiz.bukhari@hotmail.com"><i class="fas fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-            <div class="contactMe">
-                <h1 >ContactMe</h1>
-            </div>
-
+           
         </section>
     </section>
    
 
 </body>
 <script src="js/animTittle.js"></script>
-<script>
-    let menuPorto = document.querySelector(".menuPortofolio")
-    let menuContactMe = document.querySelector(".menuContactMe")
-    let home = document.querySelector(".home")
-    let navHome = document.querySelector(".navhome")
-    let navPortoFolio = document.querySelector(".navPortofolio")
-    let slider =document.querySelector(".slider")
-    menuPorto.addEventListener("click",function(e){
-        e.preventDefault()
-        slider.style.left="-100vw"
 
-    })
-    home.addEventListener("click", function (e) {
+<script>
+    let ul = document.querySelector("nav>ul")
+    let navCloser = document.querySelector(".closeNavbar>a")
+    let navCloserParent = document.querySelector(".closeNavbar")
+    let burgerMenu = document.querySelector(".burgerMenu")
+
+    burgerMenu.addEventListener("click", function(e){
         e.preventDefault()
-        slider.style.left = "0vw"
+        ul.style.left="30%"
+        navCloserParent.style.display="flex"
     })
-    menuContactMe.addEventListener("click",function (e) { 
-        e.preventDefault()
-        slider.style.left = "-200vw"
+    navCloser.addEventListener("click",function(){
+       resetSlider()
     })
-    
-    navPortoFolio.addEventListener("click", function (e) { 
-        e.preventDefault()
-        menuPorto.click()
-    })
-    navhome.addEventListener("click",function name(e) {
-        e.preventDefault()
-        home.click()
-    })
+    function resetSlider(){
+        ul.style.left="100%"
+        navCloserParent.style.display="none"
+    }
+
 </script>
+<script src="js/sliderItem.js"></script>
 <script defer src="js/navigation.js"></script>
 </html>

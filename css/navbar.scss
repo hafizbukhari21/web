@@ -70,5 +70,121 @@ nav{
 
         }
     }
+    .burgerMenu{
+        font-size: 5vw;
+        display: none;
+        i{
+            color: wheat;
+        }
+    }
+}
+.closeNavbar{
+    display: none;
+}
+
+
+@media screen and (max-width:800px){
+    .closeNavbar{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 2;
+        background-color: black;
+        opacity: 0.6;
+        a{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    nav{
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5% $paddingLR-nonResponsive;
+        padding-top: 1vh;
+        position: fixed;
+        width: 100vw;
+        z-index: 3;
+        .author{
+            display: flex;
+            font-size:  17px;
+            z-index: 1;
+            opacity: 1;
+            transition: 0.5s;
+            a{
+                color: $white;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+            a:hover{
+                color: $orange;
+            }
+        }
+        ul{
+            top: -2vh;
+            transition: 0.5s;
+            z-index: 10;
+            display: flex;
+            list-style-type: none;
+            flex-direction: column;
+            position: absolute;
+            background-color: $dark-gray;
+            height: 102vh;
+            width: 100%;
+            left: 100%;
+            padding:20vh 10vw;
+
+            li{
+                margin:auto 0;
+                position: relative;
+                padding-left: 2vw;
+                a{  
+                    
+                    text-decoration: none;
+                    font-size: 17px;
+                    position: relative;
+                    display: flex;
+                    width:auto;
+                    transition: 0.5s;
+                    padding: 5px 0px;
+                    border-bottom: 0px solid $light-gray;
+                    color: $orange;
+                    
+                    
+                    span{
+                        margin: auto 0px;
+                        position: relative;
+                        z-index: 0;
+                        left: 0;
+                        opacity: 1;
+                        transition: opacity 0.4s;
+                    }
+                    i{
+                        margin: auto 0px;
+                        font-size: 17px;
+                    }
+    
+                }
+    
+                a:hover{
+                    border-bottom: transparent;
+                    width: auto;
+                }
+                a:hover  span{
+                    opacity: 1;
+                    transition-timing-function: ease-in-out;
+                }
+    
+            }
+        }
+        .burgerMenu{
+            font-size: 5vw;
+            display: flex;
+            i{
+                color: wheat;
+            }
+        }
+    }
 }
 
