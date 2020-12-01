@@ -1,4 +1,5 @@
 const video = document.getElementById('video')
+const label = document.querySelector(".label")
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
@@ -26,6 +27,37 @@ video.addEventListener('play', () => {
     canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
     faceapi.draw.drawDetections(canvas, resizedDetections)
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
-    faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
+    
+     console.log(arraySorting( resizedDetections[0].expressions))
+
+     label.innerHTML = arraySorting( detections[0].expressions)
+
+    function arraySorting(array){
+     
+      let newArray = [
+        [
+          [array.angry],"angry"
+        ],
+        [
+          [array.disgusted],"disgusted"
+        ],
+      
+        [
+          [array.happy],"happy"
+        ],
+        [
+          [array.neutral],"neutral"
+        ],
+        [
+          [array.sad],"sad"
+        ],
+        [
+          [array.surprised],"suprised"
+        ],
+      ]
+
+      return newArray.sort()[5]
+    }
   }, 100)
 })
+
