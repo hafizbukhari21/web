@@ -1,9 +1,6 @@
 
 
-
-
-
-function ParseThis(input, titleData){
+function ParseThis(input, titleData,separator){
     let output = document.querySelector(".output")
     if (input.value.length ==0) output.style.display="none"
     else output.style.display="inline"
@@ -11,7 +8,7 @@ function ParseThis(input, titleData){
     SpliteString(input,output)
 
     function SpliteString(input,output){
-        let arrData = input.value.split(";")
+        let arrData = input.value.split(separator)
         ShowData( output, arrData)
         console.log(titleData)
 

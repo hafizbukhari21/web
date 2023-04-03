@@ -32,7 +32,6 @@ let title = [
 
 
 //EJ Report
-
 let titleEJ = [
     "Local Trx Date|YYMMDD|",
     "Local Transaction Time|HHmm24ss|",
@@ -52,6 +51,29 @@ let titleEJ = [
     "DeviceType_4|N-2|",
     "ATM Status Completion|N-1|",
     "States|N|",
+]
+
+//Cek Rekon
+
+let titleRecon = [
+    "Terminal ID||",
+    "Tgl Transaksi||",
+    "Jam Transaksi||",
+    "RRN||",
+    "Nomor Kartu||",
+    "Kode Issuer||",
+    "Nominal Trx di EJ||",
+    "Nominal TRX di Switch||",
+    "EJ RC||",
+    "SWITCH RC||",
+    "Kode Transaksi||",
+    "Nama Transaksi||",
+    "Kode Destination / Biller||",
+    "Status Trx EJ||",
+    "Status Trx Switch||",
+    "Status Rekon||",
+    "Deskripsi||",
+    "Status Clearing||",
 ]
 
 

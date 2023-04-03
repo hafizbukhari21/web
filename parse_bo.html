@@ -7,7 +7,7 @@
 
     <title>Parse Bit Transaction Data Raw</title>
   </head>
-  <body>
+  <body onload='focusNav("1")'>
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
@@ -25,6 +25,9 @@
           <li class="nav-item" onclick='focusNav("2")'>
             <a class="nav-link"  href="#">EJ Report</a>
           </li>
+          <li class="nav-item" onclick='focusNav("3")'>
+            <a class="nav-link"  href="#">Report Recon .txt</a>
+          </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
@@ -37,7 +40,7 @@
     </nav>
     <div class="container mt-4">
         <div class="mb-3">
-          <label for="" class="form-label title" >Input Transaction Data Raw</label>
+          <label for="" class="form-label title" >Input Transaction Data</label>
           <input type="text"
             class="form-control inputTrans" name="" id="" aria-describedby="helpId" placeholder="">
         </div>
@@ -67,21 +70,30 @@
         let input = document.querySelector(".inputTrans")
         let titleInput = document.querySelector(".title")
         let titleData =[]
+        let separator ="";
         function focusNav(choosen){
           let output = document.querySelector(".output")
           output.style.display="none"
           if (choosen==1){
             titleInput.innerHTML = "Input Transaction Data"
             titleData = title
+            separator = ";"
           }
           else if(choosen==2){
             titleInput.innerHTML = "Input EJ"
             titleData = titleEJ
+            separator = ";"
+          }
+
+          else if(choosen==3){
+            titleInput.innerHTML = "Input Recon"
+            titleData = titleRecon
+            separator = "|"
           }
         }
 
     
-        input.addEventListener("input",()=>ParseThis(input,titleData))
+        input.addEventListener("input",()=>ParseThis(input,titleData,separator))
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
