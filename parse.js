@@ -28,13 +28,9 @@ function ParseThis(input, titleData,separator,isBiller){
         titleData.forEach((e,idx,arr)=>{
             
             let ambilSebanyak = parseInt(e.split("|")[1])
-            //console.log(ambilSebanyak)
-            //console.log(tempArr)
             end=end+ambilSebanyak
             tempArr.push(inputBiller.value.substring(start,end))
-            console.log(tempArr)
             start=start+ambilSebanyak
-            
             
         })
 
