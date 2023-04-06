@@ -122,6 +122,9 @@
             <li class="nav-item" onclick='focusNav(false,"3")'>
               <a class="nav-link" href="#">Recon .txt</a>
             </li>
+            <li class="nav-item" onclick='focusNav(false,"4")'>
+              <a class="nav-link" href="#">Transaction Data Detail</a>
+            </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown">  Biller  </a>
                   <ul class="dropdown-menu showBiller">
@@ -203,6 +206,7 @@
           if(choosen==1) Parse("Input Transaction Data",title,";",isBiller_parse)
           else if(choosen==2) Parse("Input EJ",titleEJ,";",isBiller_parse)
           else if(choosen==3) Parse("Input Recon",titleRecon,"|",isBiller_parse)
+          else if(choosen==4) Parse("Input Transaction Data Detail",title_Transaction_data_detail,"|",isBiller_parse)
           
           //khusus biller code lihat di library
           else{
