@@ -1,4 +1,4 @@
-window.addEventListener('load', ()=>showNavbar());
+window.addEventListener('load',()=>MainNavbar());
 
 
 function showNavbar(){
@@ -28,3 +28,30 @@ function processChild(detail){
 
     return stringOutput
 }
+
+
+function MainNavbar(){
+    let ShowmainNavbar = document.querySelector(".ShowmainNavbar")
+    let string = ""
+    let finalNav = `
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown">  Biller  </a>
+          <ul class="dropdown-menu showBiller">
+          
+          </ul>
+        </li>
+    `
+
+    navbarFeature.forEach((e,idx,arr)=>{
+        string+=`
+        <li class="nav-item" onclick='focusNav(${e.isBiller},"${e.codeNavbar}")'>
+            <a class="nav-link" href="#">${e.name}</a>
+        </li>
+        `
+    })
+
+    ShowmainNavbar.innerHTML = string+finalNav
+
+    //biller Navbar
+    showNavbar()
+} 

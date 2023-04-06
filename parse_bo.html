@@ -111,9 +111,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ShowmainNavbar">
             
-            <li class="nav-item" onclick='focusNav(false,"1")'>
+            <!-- <li class="nav-item" onclick='focusNav(false,"1")'>
               <a class="nav-link" href="#">Transaction Data</a>
             </li>
             <li class="nav-item" onclick='focusNav(false,"2")'>
@@ -124,24 +124,10 @@
             </li>
             <li class="nav-item" onclick='focusNav(false,"4")'>
               <a class="nav-link" href="#">Transaction Data Detail</a>
-            </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle " href="#" data-bs-toggle="dropdown">  Biller  </a>
-                  <ul class="dropdown-menu showBiller">
-
-                    <!-- <li><a class="dropdown-item" href="#"> PLN Prepaid &raquo; </a>
-                       <ul class="submenu dropdown-menu">
-                        <li><a class="dropdown-item" onclick='focusNav(true,"10000002001-Res")' href="#">210 Payment Response & 230 Advice Response</a></li>
-                        <li><a class="dropdown-item" href="#" >Lagi Dibuat</a></li>
-                     </ul>
-                    </li> -->
-
-                  </ul>
-              </li>
-                <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-              </ul>
+            </li> -->
+            
+            
+         
             
           </ul>
           
@@ -186,7 +172,7 @@
       </footer>
     </div>
 
-    <script src="https://hafizbukhari21.github.io/BO_CDN/library.js"></script>
+    <script src="library.js"></script>
     <script src="https://hafizbukhari21.github.io/BO_CDN/libraryBiller.js"></script>
     <script src="https://hafizbukhari21.github.io/BO_CDN/libraryNavbar.js"></script>
     <script src="navbarProcess.js"></script>
@@ -202,18 +188,9 @@
           let output = document.querySelector(".output")
           output.style.display="none"
 
-          
-          if(choosen==1) Parse("Input Transaction Data",title,";",isBiller_parse)
-          else if(choosen==2) Parse("Input EJ",titleEJ,";",isBiller_parse)
-          else if(choosen==3) Parse("Input Recon",titleRecon,"|",isBiller_parse)
-          else if(choosen==4) Parse("Input Transaction Data Detail",title_Transaction_data_detail,";",isBiller_parse)
-          
-          //khusus biller code lihat di library
-          else{
-            let Biller = biller_lib.find(e=>e.code ==choosen)
-            Parse(Biller.title,Biller.expression,"",isBiller_parse)
-          }
-            
+
+          //panggil Logic Kodingan Navbar
+          eval(parseLogic)
 
           input.value = ""
           

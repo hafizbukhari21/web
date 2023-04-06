@@ -11,7 +11,6 @@ function ParseThis(input, titleData,separator,isBiller){
 
 
     function SpliteString(input,output,separator, isBiller){
-        console.log(isBiller)
         let arrData = []
         if(!isBiller) arrData=input.value.split(separator)
         else arrData=ParseBiller(input,titleData)
