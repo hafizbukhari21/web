@@ -47,7 +47,7 @@ function ParseThis(input, titleData,separator,isBiller){
                 <td>${tempArr[0]}</td>
                 <td>${tempArr[1]}</td>
                 <td>${tempArr[2]}</td>
-                <td style="font-weight: bold;">${arrData[idx]}</td>
+                <td style="font-weight: bold; white-space: pre;" >${arrData[idx]}</td>
             </tr>
             `
             str += tempString
