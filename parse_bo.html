@@ -103,7 +103,7 @@
   </head>
   <body onload='focusNav(false,"1")'>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light disableSpring">
       
         
       <div class="container">
@@ -139,10 +139,10 @@
     </nav>
     
     <div class="container mt-4">
-        <div class="mb-3">
+        <div class="mb-3 disableSpring">
           <label for="" class="form-label title" style="font-weight: bold;">Please Choose A feature </label>
           <input type="text"
-            class="form-control inputTrans" name="" id="" aria-describedby="helpId" placeholder="">
+            class="form-control inputTrans disableSpring" name="" id="" aria-describedby="helpId" placeholder="">
         </div>
         <div class="mb-3 ">
             <div class="container">
@@ -174,47 +174,8 @@
       </footer>
     </div>
 
-    <script src="https://hafizbukhari21.github.io/BO_CDN/library.js"></script>
-    <script src="https://hafizbukhari21.github.io/BO_CDN/libraryBiller.js"></script>
-    <script src="https://hafizbukhari21.github.io/BO_CDN/libraryNavbar.js"></script>
-    
     <script>
-      
-        let input = document.querySelector(".inputTrans")
-        let titleInput = document.querySelector(".title")
-        let titleData =[]
-        let separator ="";
-        let isBiller = false
-        function focusNav(isBiller_parse,choosen){
-          let output = document.querySelector(".output")
-          output.style.display="none"
-
-
-          //panggil Logic Kodingan Navbar
-          eval(parseLogic)
-
-          input.value = ""
-          
-        }
-
-        function Parse(Maintitle,titleData_parse,separator_parse,isBiller_parse){
-          titleInput.innerHTML = Maintitle
-          titleData = titleData_parse
-          separator = separator_parse
-          isBiller = isBiller_parse
-        }
-
-        
-        // console.log(separator)
-
-        input.addEventListener("input",()=>ParseThis(input,titleData,separator,isBiller))
-
-    </script>
-
-    <script>
-      
-
-var colour="random"; // "random" can be replaced with any valid colour ie: "red"...
+      var colour="random"; // "random" can be replaced with any valid colour ie: "red"...
 var sparkles=100;// increase of decrease for number of sparkles falling
 
 var x=ox=400;
@@ -269,6 +230,37 @@ function Mouse(evnt){
 
 (ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
 
+
+function stopAnimate(){
+  o=(ns||n6)?window.pageYOffset:0;
+
+	if (ie)con.style.top=document.body.scrollTop + 'px';
+
+	for (i = 0; i < n; i++){
+
+		var temp1 = eval(d+a+"dots"+i+n6r+s);
+
+		randcolours = colours[Math.floor(Math.random()*colours.length)];
+
+		(ns)?temp1.bgColor = randcolours:temp1.background = randcolours; 
+
+		if (i < n-1){
+
+			var temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
+			temp1.top = 0 + 'px';
+			temp1.left = 0 + 'px';
+
+		} 
+		else{
+
+			temp1.top = 0 + 'px';
+			temp1.left = 0+ 'px';
+		}
+	}
+
+	setTimeout("stopAnimate()",10);
+}
+
 function animate(){
 
 	o=(ns||n6)?window.pageYOffset:0;
@@ -300,7 +292,13 @@ function animate(){
 	setTimeout("animate()",10);
 }
 
-animate();
+let disableSpring = document.querySelector(".disableSpring")
+
+disableSpring.addEventListener("mouseleave",()=>animate())
+disableSpring.addEventListener("mouseenter",()=>stopAnimate())
+
+
+
 
 window.onload=function() { if (document.getElementById) {
 	var i, rats, rlef, rdow;
@@ -337,7 +335,7 @@ function sparkle() {
 		for (c=0; c<sparkles; c++) if (!starv[c]) {
 			star[c].style.left=(starx[c]=x)+"px";
 			star[c].style.top=(stary[c]=y+1)+"px";
-			star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+			star[c].style.clip="rect(0px, 10px, 10px, 0px)";
 			star[c].childNodes[0].style.backgroundColor=star[c].childNodes[1].style.backgroundColor=(colour=="random")?newColour():colour;
 			star[c].style.visibility="visible";
 			starv[c]=50;
@@ -352,7 +350,7 @@ function sparkle() {
 }
 
 function update_star(i) {
-	if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+	if (--starv[i]==25) star[i].style.clip="rect(1px, 10px, 10px, 1px)";
 	if (starv[i]) {
 		stary[i]+=1+Math.random()*3;
 		starx[i]+=(i%5-2)/5;
@@ -476,6 +474,44 @@ function newColour() {
 // ]]>
 
     </script>
+    <script src="https://hafizbukhari21.github.io/BO_CDN/library.js"></script>
+    <script src="https://hafizbukhari21.github.io/BO_CDN/libraryBiller.js"></script>
+    <script src="https://hafizbukhari21.github.io/BO_CDN/libraryNavbar.js"></script>
+    
+    <script>
+      
+        let input = document.querySelector(".inputTrans")
+        let titleInput = document.querySelector(".title")
+        let titleData =[]
+        let separator ="";
+        let isBiller = false
+        function focusNav(isBiller_parse,choosen){
+          let output = document.querySelector(".output")
+          output.style.display="none"
+
+
+          //panggil Logic Kodingan Navbar
+          eval(parseLogic)
+
+          input.value = ""
+          
+        }
+
+        function Parse(Maintitle,titleData_parse,separator_parse,isBiller_parse){
+          titleInput.innerHTML = Maintitle
+          titleData = titleData_parse
+          separator = separator_parse
+          isBiller = isBiller_parse
+        }
+
+        
+        // console.log(separator)
+
+        input.addEventListener("input",()=>ParseThis(input,titleData,separator,isBiller))
+
+    </script>
+
+  
 <script src="navbarProcess.js"></script>
 <script src="parse.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
