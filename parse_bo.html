@@ -8,7 +8,17 @@
 
     <title>Parse Bit Transaction Data Raw</title>
     <style type="text/css">
+      table {
+  counter-reset: rowNumber;
+}
 
+table tr::before {
+  display: table-cell;
+  counter-increment: rowNumber;
+  content: counter(rowNumber) ".";
+  padding-right: 0.3em;
+  text-align: right;
+}
       /* ============ desktop view ============ */
       @media all and (min-width: 992px) {
       
