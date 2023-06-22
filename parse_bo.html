@@ -112,6 +112,9 @@ table tr::before {
       
   </head>
   <body onload='focusNav(false,"1")'>
+    <div class="position-fixed w-100 h-100 bgSeram" style="background-color: red; z-index: 10;">
+      <img src="pocong.jpg" alt="" srcset="" style="width: 100vw;">
+    </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light disableSpring">
       
@@ -184,7 +187,13 @@ table tr::before {
       </footer>
     </div>
 
-    
+    <script>
+      let image = document.querySelector(".bgSeram")
+      image.style.display = "none"
+
+      // setInterval(()=>image.style.display = "flex",10000)
+      // setInterval(()=>image.style.display = "none",11000)      
+    </script>
     <script src="https://hafizbukhari21.github.io/BO_CDN/library.js"></script>
     <script src="https://hafizbukhari21.github.io/BO_CDN/libraryBiller.js"></script>
     <script src="https://hafizbukhari21.github.io/BO_CDN/libraryNavbar.js"></script>
