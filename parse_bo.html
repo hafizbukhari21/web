@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <meta name="Author" content="M Hafiz Bukhari">
+    <meta name="description" content="Untuk Tim BO Jalin">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Parse Bit Transaction Data Raw</title>
     <style type="text/css">
       table {
@@ -121,7 +123,7 @@ table tr::before {
         
       <div class="container">
         
-        <a class="navbar-brand" href="#">Backoffice 1.1</a>
+        <a class="navbar-brand" href="#">Backoffice 2.0</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -147,6 +149,7 @@ table tr::before {
           </ul>
           
         </div>
+        <span class=" d-inline-block clock" href="#">Backoffice 2.0</span>
       </div>
       
     </nav>
@@ -177,7 +180,7 @@ table tr::before {
     </div>
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="min-height: 60vw;">
-        <p class="col-md-4 mb-0 text-muted">&copy; 2024 M. Hafiz. B</p>
+        <p class="col-md-4 mb-0 text-muted">&copy; 2023 M. Hafiz. B</p>
     
         <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
           <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
@@ -200,7 +203,13 @@ table tr::before {
     
     <script>
       
-        let input = document.querySelector(".inputTrans")
+      setInterval(function() {
+        GetDate()
+      }, 1000); 
+
+
+
+      let input = document.querySelector(".inputTrans")
         let titleInput = document.querySelector(".title")
         let titleData =[]
         let separator ="";
@@ -228,6 +237,20 @@ table tr::before {
         // console.log(separator)
 
         input.addEventListener("input",()=>ParseThis(input,titleData,separator,isBiller))
+
+        
+
+
+        
+
+        
+
+        function GetDate(){
+          let element = document.querySelector(".clock")
+          element.innerHTML = new Date();
+          console.log("x")
+          
+        }
 
     </script>
 
