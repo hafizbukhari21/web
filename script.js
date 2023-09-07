@@ -33,9 +33,10 @@ video.addEventListener('play', () => {
     faceapi.draw.drawDetections(canvas, resizedDetections)
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
     
-     console.log(arraySorting( resizedDetections[0].expressions))
+    console.log(arraySorting( resizedDetections[0].expressions))
 
-     label.innerHTML = arraySorting( detections[0].expressions)
+
+     label.innerHTML = arraySorting( resizedDetections[0].expressions)[1]
 
     function arraySorting(array){
      
