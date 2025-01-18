@@ -1,0 +1,157 @@
+.contactMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contactMe .contactMeWrapper {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactMe .contactMeWrapper .pictureMe {
+  margin: auto;
+  padding-right: 5vw;
+}
+
+.contactMe .contactMeWrapper .pictureMe img {
+  width: 15vw;
+  border-radius: 100%;
+}
+
+.contactMe .contactMeWrapper .bio {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+  position: relative;
+  top: -2vh;
+  height: 25vh;
+}
+
+.contactMe .contactMeWrapper .bio h4 {
+  margin: 0 0;
+  font-size: 2.5vw;
+  color: #E18A07;
+}
+
+.contactMe .contactMeWrapper .bio p {
+  color: #ffffff;
+  margin-top: 1.5vh;
+  line-height: 1.5;
+  font-size: 1.3vw;
+}
+
+.contactMe .contactMeWrapper .bio ul {
+  margin: 3vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactMe .contactMeWrapper .bio ul li {
+  margin-right: 10px;
+  list-style-type: none;
+  font-size: 2vw;
+}
+
+.contactMe .contactMeWrapper .bio ul li a {
+  text-decoration: none;
+  color: #bfbfbf;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contactMe .contactMeWrapper .bio ul li a:hover {
+  color: #E18A07;
+}
+
+@media screen and (max-width: 800px) {
+  .contactMe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .contactMe .contactMeWrapper {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactMe .contactMeWrapper .pictureMe {
+    margin: auto;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+  .contactMe .contactMeWrapper .pictureMe img {
+    width: 40vw;
+    border-radius: 100%;
+  }
+  .contactMe .contactMeWrapper .bio {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 60vw;
+    position: relative;
+    top: -2vh;
+    height: 25vh;
+  }
+  .contactMe .contactMeWrapper .bio h4 {
+    text-align: center;
+    margin: 0 0;
+    font-size: 25px;
+    color: #E18A07;
+  }
+  .contactMe .contactMeWrapper .bio p {
+    color: #ffffff;
+    margin-top: 1.5vh;
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .contactMe .contactMeWrapper .bio ul {
+    margin: 3vw 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contactMe .contactMeWrapper .bio ul li {
+    margin-right: 0px;
+    list-style-type: none;
+    font-size: 25px;
+  }
+  .contactMe .contactMeWrapper .bio ul li a {
+    text-decoration: none;
+    color: #bfbfbf;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .contactMe .contactMeWrapper .bio ul li a:hover {
+    color: #E18A07;
+  }
+}
+/*# sourceMappingURL=contactMe.css.map */
